@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24rem;
+    scroll-margin-top: 20rem;
+}
+header .header__left{
+    max-width: 62rem;
+    flex: 1;
+}
+
+header .header__left p{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    max-width: 50rem;
+}
+
+header .header__right .header__image{
+    position: relative;
+    line-height: 0;
+    width: 80%;
+    height: 70%;
+}
+
+header .header__right .header__image::after{
+    content: '';
+    display: block;
+    width: 90%;
+    height: 65%;
+    border: 1px solid var(--tertiary-color);
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    border-radius: 0.5rem;
+    z-index: -1;
+}
+header .header__right .header__image .iveraldo{
+    border-radius: 0.5rem;
+    min-width: 25rem;
+    max-width: 100%;
+}
+header .header__right .header__image .background{
+    position: flex;
+    top: -1rem;
+    right: -0.5rem;
+    z-index: -1;
+}
